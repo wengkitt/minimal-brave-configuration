@@ -27,4 +27,10 @@ Do not enable every regional or annoyance list. Add one list at a time, then tes
 
 ## Social media blocking
 
-The right choice depends on whether you use embedded widgets. A privacy-focused default is to block Facebook, X and LinkedIn embeds. If you regularly use embedded posts or login buttons from one service, allow only that service. These controls affect embedded content, not visiting the social network directly.
+For the balanced configuration reproduced by this repository:
+
+- **Allow Facebook logins and embedded posts** — On
+- **Allow X embedded posts** — On
+- **Allow LinkedIn embedded posts** — Off
+
+This keeps commonly used Facebook and X embeds working while blocking LinkedIn embeds. These controls affect third-party content embedded on other sites; they do not prevent visiting the social networks directly. For maximum privacy, turn all three allowances off, accepting that embedded posts and some social-login buttons may stop working.

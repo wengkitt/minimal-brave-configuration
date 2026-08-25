@@ -57,6 +57,18 @@ Relaunch Brave, open `brave://policy`, click **Reload policies**, and follow [ve
 
 The scripts deliberately do not force Shields preferences, because site compatibility is personal and these controls are not part of Origin. A simple, effective setup is documented in [Shields recommendations](docs/SHIELDS.md).
 
+## Reproduce the complete experience
+
+After installing the policies, follow the [complete configuration checklist](docs/COMPLETE-SETUP.md). It covers:
+
+- the minimalist New Tab page;
+- appearance, tabs, toolbar and sidebar;
+- privacy and diagnostic settings;
+- Shields, content filters and social-media blocking;
+- final verification.
+
+The policy scripts automate only settings that Brave officially exposes as managed policies. The remaining interface preferences are documented as manual steps so they stay transparent, portable and easy to adjust.
+
 ## Undo
 
 Fully quit Brave and run the matching uninstall script with the same administrator privileges:
