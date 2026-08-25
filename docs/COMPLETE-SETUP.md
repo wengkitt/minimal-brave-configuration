@@ -2,7 +2,7 @@
 
 This checklist reproduces the complete balanced configuration documented by this project. It combines the Origin-related policies with a minimalist interface and practical Shields protection.
 
-This is a manual settings guide, not the official Brave Origin product or a license workaround. If the experience is valuable to you and you can afford it, consider [purchasing Brave Origin](https://account.brave.com/) to support Brave's continued browser, privacy, and security work. The official product also offers benefits this configuration cannot reproduce; see the main [README](../README.md).
+This is a manual settings guide, not the official Brave Origin product or a license workaround. If the experience is valuable to you and you can afford it, consider [purchasing Brave Origin](https://brave.com/origin/) to support Brave's continued browser, privacy, and security work. The official product also offers benefits this configuration cannot reproduce; see the main [README](../README.md).
 
 Brave occasionally renames or moves controls. Use Settings search if a label is not in the stated section. The values below were verified with Brave 1.93 on desktop.
 

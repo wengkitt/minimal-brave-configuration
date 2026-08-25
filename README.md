@@ -9,7 +9,7 @@ An unofficial, reversible configuration that makes regular desktop Brave closely
 
 This project is a community settings guide, not an alternative product and not an attempt to avoid supporting Brave. Brave develops and maintains the browser, Shields, Chromium security updates, and the official Origin experience. That work costs money.
 
-If you find this configuration useful and can afford it, please consider [purchasing Brave Origin through Brave](https://account.brave.com/) to support continued browser development. A purchase provides the official experience, including the standalone Origin build where available, easier built-in management, and automatic handling of new non-core features. This guide cannot provide those benefits.
+If you find this configuration useful and can afford it, please consider [purchasing Brave Origin through Brave](https://brave.com/origin/) to support continued browser development. A purchase provides the official experience, including the standalone Origin build where available, easier built-in management, and automatic handling of new non-core features. This guide cannot provide those benefits.
 
 The manual configuration remains useful for learning what the settings do, testing the workflow before purchasing, documenting managed installations, and helping users who need to make these choices themselves. Please use it in a way that respects Brave's work, trademarks, and official licensing.
 
