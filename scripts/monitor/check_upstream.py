@@ -40,7 +40,7 @@ class TextExtractor(HTMLParser):
 def fetch_json(url: str) -> dict:
     headers = {
         "Accept": "application/json",
-        "User-Agent": "brave-origin-like-config-monitor/1.0",
+        "User-Agent": "minimal-brave-configuration-monitor/1.0",
     }
     if url.startswith("https://api.github.com/") and os.environ.get("GITHUB_TOKEN"):
         headers["Authorization"] = f"Bearer {os.environ['GITHUB_TOKEN']}"

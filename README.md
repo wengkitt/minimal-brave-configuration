@@ -1,9 +1,9 @@
-# Brave Origin-like configuration
+# Minimal Brave configuration
 
-An unofficial, reversible configuration that makes regular desktop Brave closely resemble the **Brave Origin upgrade experience** by applying documented browser policies and a small set of recommended privacy settings.
+An unofficial, reversible guide for creating a minimalist regular Brave setup, inspired by the feature choices in **Brave Origin**, using documented browser policies and ordinary user settings.
 
 > [!IMPORTANT]
-> This is **not Brave Origin**, does not install the standalone Origin build, does not unlock a purchase, and does not bypass activation or payment. The standalone product compiles features out; this project only disables or hides features in regular Brave. Brave and Brave Origin are trademarks of Brave Software, Inc. This project is not affiliated with or endorsed by Brave Software.
+> This is **not Brave Origin** and is not a substitute for the official product. It does not install Origin, enable paid functionality, modify purchase or activation state, or circumvent an access control. It only automates documented policies and settings available in regular Brave. Brave and Brave Origin are trademarks of Brave Software, Inc. This project is independent and is not affiliated with, sponsored by, or endorsed by Brave Software. See [NOTICE.md](NOTICE.md).
 
 ## Support Brave
 
@@ -19,7 +19,7 @@ A weekly GitHub Actions monitor checks Brave's official Origin documentation, Gr
 
 ## How this guide was developed
 
-This project began as a hands-on collaboration between the repository maintainer and an AI coding assistant. The maintainer asked the assistant to inspect and help configure a regular Brave installation for an Origin-like experience. The assistant researched Brave's official Origin and Group Policy documentation, operated the browser settings under the maintainer's direction, and verified the resulting policies at `brave://policy`.
+This project began as a hands-on collaboration between the repository maintainer and an AI coding assistant. The maintainer asked the assistant to inspect and help create a minimalist regular Brave configuration inspired by Origin's feature choices. The assistant researched Brave's official Origin and Group Policy documentation, operated the browser settings under the maintainer's direction, and verified the resulting policies at `brave://policy`.
 
 The configuration was refined through an ongoing conversation. The maintainer reviewed the results, asked questions about choices such as Standard HTTPS upgrades, content-filter lists, Chinese-language website compatibility, and social-media blocking, and made the final decisions about the recommended balance between privacy and site compatibility. The same process was used to review the New Tab page, appearance, toolbar, sidebar, and other browser settings.
 
@@ -72,7 +72,7 @@ Relaunch Brave, open `brave://policy`, click **Reload policies**, and follow [ve
 
 The scripts deliberately do not force Shields preferences, because site compatibility is personal and these controls are not part of Origin. A simple, effective setup is documented in [Shields recommendations](docs/SHIELDS.md).
 
-## Reproduce the complete experience
+## Apply the complete configuration
 
 After installing the policies, follow the [complete configuration checklist](docs/COMPLETE-SETUP.md). It covers:
 

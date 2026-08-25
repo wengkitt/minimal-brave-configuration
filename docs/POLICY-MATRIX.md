@@ -1,6 +1,6 @@
 # Policy matrix
 
-These values reproduce the features Brave currently lists as affected by Origin. Boolean values are stored as plist booleans on macOS and DWORD `0`/`1` on Windows.
+These documented policy values disable the features Brave currently lists as affected by Origin. Boolean values are stored as plist booleans on macOS and DWORD `0`/`1` on Windows.
 
 | Policy | Value | Effect |
 |---|---:|---|

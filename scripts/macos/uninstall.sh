@@ -7,9 +7,13 @@ if [[ ${EUID} -ne 0 ]]; then
 fi
 
 TARGET_FILE="/Library/Managed Preferences/com.brave.Browser.plist"
-BACKUP_FILE="/Library/Application Support/BraveOriginLikeConfig/preinstall.plist"
+BACKUP_FILE="/Library/Application Support/MinimalBraveConfiguration/preinstall.plist"
+LEGACY_BACKUP_FILE="/Library/Application Support/BraveOriginLikeConfig/preinstall.plist"
 PLIST_BUDDY="/usr/libexec/PlistBuddy"
 
+if [[ ! -f "${BACKUP_FILE}" && -f "${LEGACY_BACKUP_FILE}" ]]; then
+  BACKUP_FILE="${LEGACY_BACKUP_FILE}"
+fi
 if [[ -f "${BACKUP_FILE}" ]]; then
   cp -p "${BACKUP_FILE}" "${TARGET_FILE}"
   rm -- "${BACKUP_FILE}"

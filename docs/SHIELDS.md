@@ -27,7 +27,7 @@ Do not enable every regional or annoyance list. Add one list at a time, then tes
 
 ## Social media blocking
 
-For the balanced configuration reproduced by this repository:
+For the balanced configuration documented by this repository:
 
 - **Allow Facebook logins and embedded posts** — On
 - **Allow X embedded posts** — On

@@ -1,8 +1,8 @@
-# Complete Origin-like experience
+# Complete minimalist Brave configuration
 
-This checklist reproduces the complete balanced configuration documented by this project. It combines the Origin-related policies with a minimalist interface and practical Shields protection.
+This checklist applies the complete balanced configuration documented by this project. It combines documented feature-disabling policies with a minimalist interface and practical Shields protection, inspired by the feature choices in Brave Origin.
 
-This is a manual settings guide, not the official Brave Origin product or a license workaround. If the experience is valuable to you and you can afford it, consider [purchasing Brave Origin](https://brave.com/origin/) to support Brave's continued browser, privacy, and security work. The official product also offers benefits this configuration cannot reproduce; see the main [README](../README.md).
+This is a manual settings guide, not the official Brave Origin product or a license workaround. If the experience is valuable to you and you can afford it, consider [purchasing Brave Origin](https://brave.com/origin/) to support Brave's continued browser, privacy, and security work. The official product provides benefits this configuration cannot provide; see the main [README](../README.md).
 
 Brave occasionally renames or moves controls. Use Settings search if a label is not in the stated section. The values below were verified with Brave 1.93 on desktop.
 
@@ -21,7 +21,7 @@ Open a new tab and choose **Customize**. Use this minimalist setup:
 | Sponsored images | **Off** |
 | Brave News | **Off** |
 | Brave Rewards card | **Off** |
-| Background images | **Personal preference**; plain/off is the most Origin-like |
+| Background images | **Personal preference**; plain/off is the most minimalist |
 | Top Sites / Favorites | **On** if useful; this is local convenience, not an Origin feature |
 | Stats | **On** if useful; these are local blocked-item/time-saved counters, not the disabled daily usage ping |
 | Clock | **On** if useful |
@@ -48,7 +48,7 @@ Open `brave://settings/appearance` and apply these values:
 | Compact mode | **Off** |
 | Rounded corners on main content | **Off** |
 
-Theme and color scheme are personal and do not change the Origin-like behavior.
+Theme and color scheme are personal and do not affect the feature-disabling policies.
 
 ### Tabs
 
@@ -65,7 +65,7 @@ Theme and color scheme are personal and do not change the Origin-like behavior.
 
 ### Sidebar
 
-Set **Show Sidebar** to **Never**. Its side preference is irrelevant while disabled; the reproduced configuration retains the default right side.
+Set **Show Sidebar** to **Never**. Its side preference is irrelevant while disabled; this configuration retains the default right side.
 
 ## 4. Toolbar
 
@@ -130,4 +130,4 @@ Enable EasyList Cookie, Fanboy's Anti-Newsletter and Fanboy's Mobile Notificatio
 5. Visit a normal site and inspect the Shields panel to confirm the global baseline.
 6. Test login and video playback on your commonly used sites. Use a site-specific Shields exception before weakening the global defaults.
 
-At this point regular Brave provides a close approximation of the **Origin upgrade experience plus the balanced interface and Shields configuration**. It is still not the standalone Brave Origin binary; see the limitations in the main README.
+At this point regular Brave has the documented **minimalist interface and balanced Shields configuration**, with the selected features disabled through ordinary policies. It is still regular Brave—not the Origin upgrade or standalone Origin binary; see the limitations in the main README.

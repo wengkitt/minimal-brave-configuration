@@ -2,7 +2,8 @@
 $ErrorActionPreference = 'Stop'
 
 $RegistryPath = 'HKLM:\SOFTWARE\Policies\BraveSoftware\Brave'
-$BackupFile = Join-Path $env:ProgramData 'BraveOriginLikeConfig\preinstall.json'
+$BackupFile = Join-Path $env:ProgramData 'MinimalBraveConfiguration\preinstall.json'
+$LegacyBackupFile = Join-Path $env:ProgramData 'BraveOriginLikeConfig\preinstall.json'
 $PolicyNames = @(
     'TorDisabled', 'BraveRewardsDisabled', 'BraveWalletDisabled', 'BraveVPNDisabled',
     'BraveAIChatEnabled', 'BraveNewsDisabled', 'BraveTalkDisabled',
@@ -11,6 +12,9 @@ $PolicyNames = @(
     'MetricsReportingEnabled'
 )
 
+if (-not (Test-Path $BackupFile) -and (Test-Path $LegacyBackupFile)) {
+    $BackupFile = $LegacyBackupFile
+}
 if (Test-Path $RegistryPath) {
     foreach ($name in $PolicyNames) {
         Remove-ItemProperty -Path $RegistryPath -Name $name -ErrorAction SilentlyContinue

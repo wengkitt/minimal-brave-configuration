@@ -2,8 +2,9 @@
 $ErrorActionPreference = 'Stop'
 
 $RegistryPath = 'HKLM:\SOFTWARE\Policies\BraveSoftware\Brave'
-$BackupDir = Join-Path $env:ProgramData 'BraveOriginLikeConfig'
+$BackupDir = Join-Path $env:ProgramData 'MinimalBraveConfiguration'
 $BackupFile = Join-Path $BackupDir 'preinstall.json'
+$LegacyBackupFile = Join-Path $env:ProgramData 'BraveOriginLikeConfig\preinstall.json'
 $Policies = [ordered]@{
     TorDisabled = 1
     BraveRewardsDisabled = 1
@@ -24,6 +25,9 @@ $Policies = [ordered]@{
 New-Item -ItemType Directory -Path $BackupDir -Force | Out-Null
 New-Item -Path $RegistryPath -Force | Out-Null
 
+if ((Test-Path $LegacyBackupFile) -and -not (Test-Path $BackupFile)) {
+    Copy-Item $LegacyBackupFile $BackupFile
+}
 if (-not (Test-Path $BackupFile)) {
     $existing = [ordered]@{}
     foreach ($name in $Policies.Keys) {

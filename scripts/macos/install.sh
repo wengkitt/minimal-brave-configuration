@@ -8,11 +8,15 @@ fi
 
 TARGET_DIR="/Library/Managed Preferences"
 TARGET_FILE="${TARGET_DIR}/com.brave.Browser.plist"
-BACKUP_DIR="/Library/Application Support/BraveOriginLikeConfig"
+BACKUP_DIR="/Library/Application Support/MinimalBraveConfiguration"
 BACKUP_FILE="${BACKUP_DIR}/preinstall.plist"
+LEGACY_BACKUP_FILE="/Library/Application Support/BraveOriginLikeConfig/preinstall.plist"
 PLIST_BUDDY="/usr/libexec/PlistBuddy"
 
 install -d -m 0755 "${TARGET_DIR}" "${BACKUP_DIR}"
+if [[ -f "${LEGACY_BACKUP_FILE}" && ! -f "${BACKUP_FILE}" ]]; then
+  cp -p "${LEGACY_BACKUP_FILE}" "${BACKUP_FILE}"
+fi
 if [[ -f "${TARGET_FILE}" && ! -f "${BACKUP_FILE}" ]]; then
   cp -p "${TARGET_FILE}" "${BACKUP_FILE}"
 fi
