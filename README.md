@@ -17,6 +17,16 @@ The manual configuration remains useful for learning what the settings do, testi
 
 A weekly GitHub Actions monitor checks Brave's official Origin documentation, Group Policy documentation, and latest stable release. If something changes, it opens a maintenance issue with a review checklist. See [Keeping the guide current](docs/MAINTENANCE.md).
 
+## How this guide was developed
+
+This project began as a hands-on collaboration between the repository maintainer and an AI coding assistant. The maintainer asked the assistant to inspect and help configure a regular Brave installation for an Origin-like experience. The assistant researched Brave's official Origin and Group Policy documentation, operated the browser settings under the maintainer's direction, and verified the resulting policies at `brave://policy`.
+
+The configuration was refined through an ongoing conversation. The maintainer reviewed the results, asked questions about choices such as Standard HTTPS upgrades, content-filter lists, Chinese-language website compatibility, and social-media blocking, and made the final decisions about the recommended balance between privacy and site compatibility. The same process was used to review the New Tab page, appearance, toolbar, sidebar, and other browser settings.
+
+After the browser setup was working, the maintainer asked the assistant to turn the experience into a public, reversible, cross-checked guide. Together, that work became the documentation, platform scripts, verification steps, safety notes, and automated upstream-change monitor in this repository.
+
+AI assistance helped with research, browser operation, drafting, scripting, and validation, but the project was initiated and directed by the maintainer. Recommendations should still be checked against Brave's current official documentation, and community testing and corrections are welcome. No passwords, browsing data, or other private session information are included in this repository.
+
 ## What it changes
 
 The installers disable the currently documented Origin-related features:
