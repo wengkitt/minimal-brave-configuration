@@ -21,7 +21,7 @@ Start small; overlapping lists increase breakage and debugging work.
 - EasyList Cookie
 - Fanboy's Anti-Newsletter
 - Fanboy's Mobile Notifications
-- AdGuard Chinese, **optional** for frequent Chinese-language sites such as `ifun.tv`
+- AdGuard Chinese, **optional** for frequent Chinese-language sites such as `yfsp.tv`
 
 Do not enable every regional or annoyance list. Add one list at a time, then test common sites. If video playback or login fails, lower Shields for that site or temporarily disable the most recently added list.
 

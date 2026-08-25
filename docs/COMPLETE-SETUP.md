@@ -119,7 +119,7 @@ Apply every value in [SHIELDS.md](SHIELDS.md). The resulting baseline is:
 - X embeds: **Allowed**
 - LinkedIn embeds: **Blocked**
 
-Enable EasyList Cookie, Fanboy's Anti-Newsletter and Fanboy's Mobile Notifications. Enable AdGuard Chinese if you frequently browse Chinese-language sites such as `ifun.tv`.
+Enable EasyList Cookie, Fanboy's Anti-Newsletter and Fanboy's Mobile Notifications. Enable AdGuard Chinese if you frequently browse Chinese-language sites such as `yfsp.tv`.
 
 ## 7. Final review
 
