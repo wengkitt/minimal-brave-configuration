@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>TorDisabled</key><true/>
+  <key>BraveRewardsDisabled</key><true/>
+  <key>BraveWalletDisabled</key><true/>
+  <key>BraveVPNDisabled</key><true/>
+  <key>BraveAIChatEnabled</key><false/>
+  <key>BraveNewsDisabled</key><true/>
+  <key>BraveTalkDisabled</key><true/>
+  <key>BraveSpeedreaderEnabled</key><false/>
+  <key>BraveWaybackMachineEnabled</key><false/>
+  <key>BraveP3AEnabled</key><false/>
+  <key>BraveStatsPingEnabled</key><false/>
+  <key>BraveWebDiscoveryEnabled</key><false/>
+  <key>BravePlaylistEnabled</key><false/>
+  <key>MetricsReportingEnabled</key><false/>
+</dict>
+</plist>
