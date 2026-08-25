@@ -20,7 +20,9 @@ The policy set is based on Brave's [Origin explanation](https://support.brave.ap
 
 - Brave 1.84 or newer is recommended (some policies appeared in 1.82–1.84).
 - Administrator/root access to install machine policies.
-- Desktop macOS, Windows, or Linux. Mobile platforms are not covered.
+- Desktop macOS or Windows. Mobile platforms are not covered.
+
+Linux is intentionally not supported by this project because Brave provides the [official Brave Origin experience free on Linux](https://support.brave.app/hc/en-us/articles/38561489788173-What-is-Brave-Origin). Linux users should use that instead of recreating it with this configuration.
 
 ## Install
 
@@ -32,15 +34,6 @@ Download or clone this repository, fully quit Brave, then run the command for yo
 cd scripts/macos
 sudo ./install.sh
 ```
-
-### Linux
-
-```bash
-cd scripts/linux
-sudo ./install.sh
-```
-
-Linux users should first consider the **official Brave Origin option, available free on Linux**, as described by Brave. This project is mainly useful for reproducible managed configuration.
 
 ### Windows
 
@@ -74,7 +67,6 @@ The policy scripts automate only settings that Brave officially exposes as manag
 Fully quit Brave and run the matching uninstall script with the same administrator privileges:
 
 - macOS: `sudo ./scripts/macos/uninstall.sh`
-- Linux: `sudo ./scripts/linux/uninstall.sh`
 - Windows (Administrator PowerShell): `.\scripts\windows\uninstall.ps1`
 
 The uninstallers remove only this project's named policies. macOS and Windows installers also preserve pre-existing values so uninstall can restore them.
