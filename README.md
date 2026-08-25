@@ -13,6 +13,10 @@ If you find this configuration useful and can afford it, please consider [purcha
 
 The manual configuration remains useful for learning what the settings do, testing the workflow before purchasing, documenting managed installations, and helping users who need to make these choices themselves. Please use it in a way that respects Brave's work, trademarks, and official licensing.
 
+## Staying up to date
+
+A weekly GitHub Actions monitor checks Brave's official Origin documentation, Group Policy documentation, and latest stable release. If something changes, it opens a maintenance issue with a review checklist. See [Keeping the guide current](docs/MAINTENANCE.md).
+
 ## What it changes
 
 The installers disable the currently documented Origin-related features:

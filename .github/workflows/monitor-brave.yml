@@ -1,0 +1,56 @@
+name: Monitor upstream Brave changes
+
+on:
+  schedule:
+    - cron: "17 2 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: monitor-upstream-brave
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Compare official Brave sources with baseline
+        id: upstream
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          REPORT_FILE: ${{ runner.temp }}/brave-upstream-report.md
+        run: |
+          python3 scripts/monitor/check_upstream.py \
+            --baseline .github/upstream-baseline.json \
+            --report-file "$REPORT_FILE" \
+            --github-output "$GITHUB_OUTPUT"
+
+      - name: Open one maintenance issue
+        if: steps.upstream.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPORT_FILE: ${{ runner.temp }}/brave-upstream-report.md
+        run: |
+          existing="$(gh issue list \
+            --state open \
+            --search 'Upstream Brave changes detected in:title' \
+            --json number \
+            --jq '.[0].number // empty')"
+          if [ -z "$existing" ]; then
+            gh label create maintenance \
+              --color "1D76DB" \
+              --description "Repository maintenance and upstream review" \
+              --force
+            gh issue create \
+              --title "Upstream Brave changes detected" \
+              --body-file "$REPORT_FILE" \
+              --label maintenance
+          else
+            echo "Maintenance issue #$existing is already open."
+          fi

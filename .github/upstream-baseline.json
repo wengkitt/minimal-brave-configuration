@@ -1,0 +1,19 @@
+{
+  "origin_article": {
+    "title": "What is Brave Origin?",
+    "url": "https://support.brave.app/hc/en-us/articles/38561489788173-What-is-Brave-Origin",
+    "updated_at": "2026-08-24T21:50:58Z",
+    "content_sha256": "0f10366bd1b016b802c2e39110800aba45e80fc8aa0d7cef31f58421eb1030c8"
+  },
+  "group_policy_article": {
+    "title": "Group Policy",
+    "url": "https://support.brave.app/hc/en-us/articles/360039248271-Group-Policy",
+    "updated_at": "2026-08-22T13:17:14Z",
+    "content_sha256": "2571057f06f805bd215f473846548176dc94b6a876ecb5360f3f9dfd3e688619"
+  },
+  "stable_release": {
+    "tag": "v1.93.138",
+    "url": "https://github.com/brave/brave-browser/releases/tag/v1.93.138",
+    "published_at": "2026-08-21T01:07:00Z"
+  }
+}
