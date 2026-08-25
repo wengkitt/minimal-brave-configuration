@@ -24,7 +24,24 @@ python3 scripts/monitor/check_upstream.py --write-baseline .github/upstream-base
 
 6. Commit the documentation and baseline together, then close the maintenance issue.
 
+7. Create a release tag for the Brave version that was tested. Tags use the exact format `brave-X.Y.Z`, for example:
+
+```bash
+gh release create brave-1.93.138 \
+  --title "Verified for Brave 1.93.138" \
+  --notes "Configuration reviewed and verified for Brave 1.93.138."
+```
+
+Update the version badge and current-version statement in `README.md` in the same maintenance change. A release means the guide was actually reviewed against that Brave version; do not create a tag merely because Brave published a new build.
+
 Refreshing a baseline means “this upstream state has been reviewed”; do not refresh it merely to silence an alert.
+
+## Release convention
+
+- Use `brave-X.Y.Z` tags so users can immediately see the corresponding Brave version.
+- Treat tags as immutable snapshots; correct mistakes with a new patch tag or clearly documented replacement release rather than moving an existing tag.
+- State which operating systems were tested in the release notes.
+- Keep older releases available for users who have not upgraded Brave yet.
 
 ## Additional notifications
 

@@ -4,7 +4,7 @@ This checklist applies the complete balanced configuration documented by this pr
 
 This is a manual settings guide, not the official Brave Origin product or a license workaround. If the experience is valuable to you and you can afford it, consider [purchasing Brave Origin](https://brave.com/origin/) to support Brave's continued browser, privacy, and security work. The official product provides benefits this configuration cannot provide; see the main [README](../README.md).
 
-Brave occasionally renames or moves controls. Use Settings search if a label is not in the stated section. The values below were verified with Brave 1.93 on desktop.
+Brave occasionally renames or moves controls. Use Settings search if a label is not in the stated section. The values below were verified with Brave 1.93.138 on macOS. Windows policy parity has been reviewed, but real-device Windows testing is still welcome.
 
 ## 1. Install the Origin-related policies
 

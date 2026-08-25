@@ -1,6 +1,10 @@
 # Minimal Brave configuration
 
+[![Verified with Brave 1.93.138](https://img.shields.io/badge/verified%20with%20Brave-1.93.138-FB542B)](https://github.com/wengkitt/minimal-brave-configuration/releases/tag/brave-1.93.138)
+
 An unofficial, reversible guide for creating a minimalist regular Brave setup, inspired by the feature choices in **Brave Origin**, using documented browser policies and ordinary user settings.
+
+**Current verified Brave version:** `1.93.138`. The configuration and policy behavior were checked in Brave 1.93.138 on macOS. Windows scripts have been reviewed for syntax and policy parity but have not yet been exercised on a Windows device. See [Releases](https://github.com/wengkitt/minimal-brave-configuration/releases) for immutable versioned snapshots.
 
 > [!IMPORTANT]
 > This is **not Brave Origin** and is not a substitute for the official product. It does not install Origin, enable paid functionality, modify purchase or activation state, or circumvent an access control. It only automates documented policies and settings available in regular Brave. Brave and Brave Origin are trademarks of Brave Software, Inc. This project is independent and is not affiliated with, sponsored by, or endorsed by Brave Software. See [NOTICE.md](NOTICE.md).
